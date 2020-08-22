@@ -1,0 +1,161 @@
+/*первое, что нужно делать с каждым проектом*/
+body { 
+	padding: 0;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	color: 000;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase; 
+}
+
+h2 {
+	font-size: 50 px;
+	padding-top: 50px;
+
+	margin-bottom: 58px;
+}
+
+ul, li { 
+	display: block; /* убирает точку возле ссылками*/
+	padding: 0;
+	margin: 0;
+}
+
+
+/*верстка*/
+
+.container {
+	width: 1170px;
+	/*позиционирование по центру*/
+	margin: 0 auto;
+}
+.header {
+	background: url('../img/header-bg.jpg') no-repeat center top / cover;
+	padding-top: 57px; /* для вытянусти картинки */
+	color: #fff; /* ? */
+	padding-bottom: 322px; /* для вытянусти картинки */
+}
+/*обращаемся сразу ко всем ссылкам хедера*/
+.header a {
+	color: #fff;
+}
+/*обращаемся к меню, тоесть тоже к ссылкам*/
+
+.menu {
+	display: flex; /*текст в одну линию*/
+
+}
+.menu li a {
+	text-transform: uppercase; /* все слова с большой буквы*/
+	text-decoration: none; /*убирает подчеркивание*/
+	font-size: 14 px; /* размер пикселей*/
+	letter-spacing: 0.1em;/*расстояние между букв в слове*/
+}
+.menu li {
+	margin-right: 50px;
+}
+
+.logo{
+	margin-right: 69px; /* от лого отступаем в право на 69 px*/
+}
+.sign {
+	display: block;
+	border: 1px solid #fff;
+	padding: 10px;
+	font-size: 17px; /* размер текста*/
+	text-decoration: none; 
+	margin-left: auto;
+	letter-spacing: 0.1em;/*расстояние между букв в слове*/
+
+}
+.nav {
+	padding-top: 57px; /*отступ сверху, padding используем только в header*/
+	display: flex; /*обратились к родителю, что бы теперб весь хедер был в одну строку*/
+	align-items: center; /* ив весь хедер в одну строчку*/
+}
+
+.offer {
+	text-transform: uppercase;
+	color:#fff; 
+	letter-spacing: 0.1em;/*расстояние между букв в слове*/
+	margin-top: 216px; /*опускает текст вниз*/
+}
+.offer p {
+	font-size: 30px; /*размер текста*/
+	letter-spacing: 0.1em;
+}
+.offer h1 {
+	font-family: 'Anton' sans-serif;
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em
+
+
+}
+
+.btn { /*кнопка */
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	padding:17px 47px; 
+	border: 1px solid #fff; /*рамка*/
+	width: 238px; /*ширина*/
+	text-decoration: none;
+}
+
+.about {
+
+
+}
+.container {
+	font-size: 17px;
+}
+/* два блока в одной строке */
+.description {
+	display: flex;
+	justify-content: space-between; /*один блок к левой части прижат другой к правой*/
+}
+
+.description p {
+	font-family: 'Open Sans': 
+	font-weight: 400;
+	text-align: justify; /*текст находится на одном уровне с другим текстом*/
+	line-height: 1.62em; /*растянутый текст */
+}
+/*.desc-left { 
+	padding: 60px;
+}
+
+.desc-right {
+	padding: 60px;
+}*/
+.desc-left, .desc-right {
+	width: 567px;
+}
+.gallery {
+	margin-top: 67px;
+	/*елементы будут на одинаковом расстоянии друг от друга*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-text {
+	font-size: 15px; /*размер текста*/
+	font-family: 'Open Sans' sans-serif;
+	display: flex; /* текст на однйо строчке*/
+	padding: 150 px;
+}
+.footer-text p {
+	margin-right: 60px;
+}
+
+
+
+
